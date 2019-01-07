@@ -1,9 +1,7 @@
 <template>
   <div class="home">    
     <!-- <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App."/>-->
-    <a class="button is-danger" @click="login()">Danger</a>
-
+    <HelloWorld msg="Welcome to Your Vue.js App."/>-->    
   </div>
 </template>
 
@@ -14,6 +12,6 @@ import { mapActions } from 'vuex';
 
 export default {
   name: "home",
-  methods: mapActions('auth', ['login']),
+  methods: mapActions('auth', ['login', 'logout']),
 };
 </script>
